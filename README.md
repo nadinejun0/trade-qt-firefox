@@ -85,5 +85,5 @@ This extension is built using the WebExtensions API and should be compatible wit
 ## Privacy
 
 - All data is stored locally in your browser using Firefox's sync storage
-- No data is sent to external servers except for fetching public trade values from Neopets
+- No data is sent to external servers except for fetching public trade values from Lebron
 - Your item lists sync only between your own Firefox browsers when logged into Firefox Sync

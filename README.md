@@ -2,7 +2,7 @@
 
 A Firefox browser extension that enhances DTI (Dress to Impress) closet pages with trading and wishlist management features. 
 
-##WORK IN PROGRESS
+## huge massive WORK IN PROGRESS
 
 ## Features
 

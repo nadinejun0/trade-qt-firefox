@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DTI Assistant Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Settings</h1>
+    <div class="setting">
+      <span>Auto-compare items on load</span>
+      <label class="toggle-switch-label">
+        <input type="checkbox" id="auto-compare-toggle">
+        <span class="toggle-switch"></span>
+      </label>
+    </div>
+    <div class="setting">
+      <span>Show on-page notepad</span>
+      <label class="toggle-switch-label">
+        <input type="checkbox" id="show-notepad-toggle" checked>
+        <span class="toggle-switch"></span>
+      </label>
+    </div>
+
+    <div class="setting-section">
+      <h2>Site Settings</h2>
+      <div class="setting">
+        <span>Dress to Impress (impress.openneo.net)</span>
+        <label class="toggle-switch-label">
+          <input type="checkbox" id="site-dti-toggle" checked>
+          <span class="toggle-switch"></span>
+        </label>
+      </div>
+      <div class="setting">
+        <span>Neopets (neopets.com)</span>
+        <label class="toggle-switch-label">
+          <input type="checkbox" id="site-neopets-toggle" checked>
+          <span class="toggle-switch"></span>
+        </label>
+      </div>
+      <div class="setting">
+        <span>JellyNeo (jellyneo.net)</span>
+        <label class="toggle-switch-label">
+          <input type="checkbox" id="site-jellyneo-toggle" checked>
+          <span class="toggle-switch"></span>
+        </label>
+      </div>
+    </div>
+   
+    <div id="tradelist-storage">
+      <h2>Stored Tradelists</h2>
+      <div id="tradelist-list" class="tradelist-container"></div>
+    </div>
+     <div class="setting">
+      <button id="clear-all-tradelists" class="btn btn-danger">Clear All Tradelists</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

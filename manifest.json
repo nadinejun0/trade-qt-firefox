@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "DTI Trading Assistant",
+  "version": "1.1.0",
+  "description": "Enhances DTI with a synced trading/wishlist and automatic value lookups from Neopets.",
+  
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  
+  "host_permissions": [
+    "*://*/*",
+    "https://www.neopets.com/~lebron",
+    "https://lebron-values.netlify.app/*"
+  ],
+  
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  
+  "action": {
+    "default_title": "DTI Trading Assistant",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    },
+    "default_popup": "popup/popup.html"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": [
+        "content/constants.js",
+        "content/utils.js", 
+        "content/storage.js",
+        "content/dom-utils.js",
+        "content/content.js"
+      ],
+      "css": ["content/content-styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  
+  "background": {
+    "scripts": ["background/background.js"]
+  },
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*"],
+      "matches": ["*://*/*"]
+    }
+  ],
+  
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "dti-assistant@example.com"
+    }
+  }
+}
